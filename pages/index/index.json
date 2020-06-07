@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "bio": "/pages/bio/index/index",
+    "fortune": "/pages/fortune/index/index",
+    "guide": "/pages/guide/index/index",
+    "about": "/pages/about/index/index"
+  }
+}

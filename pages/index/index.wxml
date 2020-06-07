@@ -1,0 +1,30 @@
+<bio wx:if="{{PageCur=='bio'}}"></bio>
+<fortune wx:if="{{PageCur=='fortune'}}"></fortune>
+<guide wx:if="{{PageCur=='guide'}}"></guide>
+<about wx:if="{{PageCur=='about'}}"></about>
+<view class="cu-bar tabbar bg-white shadow foot">
+  <view class="action" bindtap="NavChange" data-cur="bio">
+    <view class='cuIcon-cu-image'>
+      <image src="/images/tabbar/bio{{PageCur=='bio'?'_cur':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='bio'?'text-green':'text-gray'}}">百科</view>
+  </view>
+  <view class="action" bindtap="NavChange" data-cur="fortune">
+    <view class='cuIcon-cu-image'>
+      <image src="/images/tabbar/fortune{{PageCur=='fortune'?'_cur':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='fortune'?'text-green':'text-gray'}}">运势</view>
+  </view>
+  <view class="action" bindtap="NavChange" data-cur="guide">
+    <view class='cuIcon-cu-image'>
+      <image src="/images/tabbar/guide{{PageCur=='guide'?'_cur':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='guide'?'text-green':'text-gray'}}">攻略</view>
+  </view>
+  <view class="action" bindtap="NavChange" data-cur="about">
+    <view class='cuIcon-cu-image'>
+      <image src="/images/tabbar/about{{PageCur=='about'?'_cur':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='about'?'text-green':'text-gray'}}">关于</view>
+  </view>
+</view>
