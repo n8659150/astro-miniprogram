@@ -4,7 +4,8 @@
     "pages/bio/index/index",
     "pages/fortune/index/index",
     "pages/guide/index/index",
-    "pages/about/index/index"
+    "pages/about/index/index",
+    "pages/bio/Aries/Aries"
   ],
   "window": {
     "navigationBarBackgroundColor": "#39b54a",

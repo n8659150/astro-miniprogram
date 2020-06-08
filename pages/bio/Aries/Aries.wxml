@@ -1,0 +1,12 @@
+<scroll-view scroll-y class="bg-white scrollPage">
+	<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+    <view slot="backText">返回</view>
+		<view slot="content">
+    <text class="title-text">白羊座</text>
+    </view>
+	</cu-custom>
+	<view class="flex bio-main">
+		白羊座
+	</view>
+	<view class='cu-tabbar-height'></view>
+</scroll-view>

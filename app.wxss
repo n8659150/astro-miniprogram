@@ -1,6 +1,18 @@
 @import "colorui/main.wxss";
 @import "colorui/icon.wxss";
 
+.flex {
+  display: flex;
+}
+.bg-white {
+  background-color: #fff;
+}
+
+.title-text {
+  font-weight: bold;
+  font-size: 36rpx;
+}
+
 .scrollPage {
   height: 100vh;
 }
