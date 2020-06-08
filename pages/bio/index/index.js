@@ -20,47 +20,47 @@ Component({
     },
     {
       title: '金牛座',
-      name: 'Aries',
+      name: 'Taurus',
     },
     {
       title: '双子座',
-      name: 'Aries',
+      name: 'Gemini',
     },
     {
       title: '巨蟹座',
-      name: 'Aries',
+      name: 'Cancer',
     },
     {
       title: '狮子座',
-      name: 'Aries',
+      name: 'Leo',
     },
     {
       title: '处女座',
-      name: 'Aries',
+      name: 'Virgo',
     },
     {
       title: '天秤座',
-      name: 'Aries',
+      name: 'Libra',
     },
     {
       title: '天蝎座',
-      name: 'Aries',
+      name: 'Scorpio',
     },
     {
       title: '射手座',
-      name: 'Aries',
+      name: 'Sagittarius',
     },
     {
       title: '摩羯座',
-      name: 'Aries',
+      name: 'Capricorn',
     },
     {
       title: '水瓶座',
-      name: 'Aries',
+      name: 'Aquarius',
     },
     {
       title: '双鱼座',
-      name: 'Aries',
+      name: 'Pisces',
     },
   ],
   },

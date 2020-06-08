@@ -7,7 +7,7 @@
 	<view class="flex bio-main">
 		<navigator open-type="navigate" hover-class='none' url="/pages/bio/{{item.name}}/{{item.name}}" class="flex bio-container" wx:for="{{elements}}" wx:key>
 			<view class="flex bio-icon">
-				<image src="/images/Aries.png" style="width:85rpx; height: 85rpx"></image>
+				<image src="/images/{{item.name}}.png" style="width:85rpx; height: 85rpx"></image>
 			</view>
 				<text class="flex bio-text">{{item.title}}</text>
 		</navigator>

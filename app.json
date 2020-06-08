@@ -5,7 +5,18 @@
     "pages/fortune/index/index",
     "pages/guide/index/index",
     "pages/about/index/index",
-    "pages/bio/Aries/Aries"
+    "pages/bio/Aries/Aries",
+    "pages/bio/Taurus/Taurus",
+    "pages/bio/Gemini/Gemini",
+    "pages/bio/Cancer/Cancer",
+    "pages/bio/Leo/Leo",
+    "pages/bio/Virgo/Virgo",
+    "pages/bio/Libra/Libra",
+    "pages/bio/Scorpio/Scorpio",
+    "pages/bio/Sagittarius/Sagittarius",
+    "pages/bio/Capricorn/Capricorn",
+    "pages/bio/Aquarius/Aquarius",
+    "pages/bio/Pisces/Pisces"
   ],
   "window": {
     "navigationBarBackgroundColor": "#39b54a",
