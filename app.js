@@ -1,3 +1,12 @@
+const AV = require('./libs/av-core-min.js');
+const adapters = require('./libs/leancloud-adapters-weapp.js');
+AV.setAdapters(adapters);
+AV.init({
+  appId: '',
+  appKey: '',
+  // 请将 xxx.example.com 替换为你的应用绑定的自定义 API 域名
+  serverURLs: '',
+});
 //app.js
 App({
   onLaunch: function () {
