@@ -1,5 +1,5 @@
-const AV = require('../../../libs/av-core-min');
-const { renderBioData } = require('../../../models/bio');
+
+const { fetchBioDataFromServer, renderBioData } = require('../../../models/bio');
 // pages/bio/Aries/Aries.js
 Page({
 
@@ -31,9 +31,9 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    new AV.Query('CagegoryStats')
-      .find()
+    fetchBioDataFromServer('测试星座')
       .then((data)=> {
+        console.log(data);
         this.setData({
           bioData: data.map(renderBioData)
         })
