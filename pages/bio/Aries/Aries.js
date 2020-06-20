@@ -1,3 +1,5 @@
+const AV = require('../../../libs/av-core-min');
+const { renderBioData } = require('../../../models/bio');
 // pages/bio/Aries/Aries.js
 Page({
 
@@ -5,6 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    bioData: [],
     TabCur: 0,
     items: [
       { title: '事 业', text1: '事业，下半年的运势相对有所好转。白羊座相对其他星座比较传统保守，个性内敛沉稳，是一个踏实本分的人。在事业上，金牛一向兢兢业业、勤勤恳恳，脚踏实地地做好每一件事情;他们不争不抢、只是努力做好分内之事。', 'text2': '2020年白羊座的事业发展起伏比较大，机会不会;所以想要把握住机会，争取给自己谋求更好的发展空间，就必须学会争取。2020年白羊座的事业发展取决于金牛自己的抉择。'},
@@ -28,7 +31,13 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    new AV.Query('CagegoryStats')
+      .find()
+      .then((data)=> {
+        this.setData({
+          bioData: data.map(renderBioData)
+        })
+      })
   },
 
   /**
