@@ -4,7 +4,7 @@
     <text class="title-text">星座百科</text>
     </view>
 	</cu-custom>
-	<view class="flex bio-main">
+	<view class="flex bio-wrap">
 		<navigator open-type="navigate" hover-class='none' url="/pages/bio/{{item.name}}/{{item.name}}" class="flex bio-container" wx:for="{{elements}}" wx:key>
 			<view class="flex bio-icon">
 				<image src="/images/{{item.name}}.png" style="width:85rpx; height: 85rpx"></image>
