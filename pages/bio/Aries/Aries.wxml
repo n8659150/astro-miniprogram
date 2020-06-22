@@ -1,3 +1,4 @@
+<!--pages/bio/Aries/Aries.wxml-->
 <scroll-view scroll-y class="bg-white scrollPage">
 	<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
     <view slot="backText">返回</view>
@@ -14,14 +15,13 @@
 		</view>
 		<view class="nav">
 			<view class="flex text-center bio-tabs">
-				<view class="flex-sub bio-tab {{index==TabCur?'cur':''}}" wx:for="{{items.length}}" wx:key bindtap="tabSelect" data-id="{{index}}">
-					{{items[index]['title']}}
+				<view class="flex-sub bio-tab {{index==TabCur?'cur':''}}" wx:for="{{bioData[0]['content'].length}}" wx:key bindtap="tabSelect" data-id="{{index}}">
+					{{bioData[0]['content'][index]['category']}}
 				</view>
 			</view>
 		</view>
-		<view class="bio-intro {{index==TabCur?'cur':''}}" wx:for="{{items.length}}" wx:key data-id="{{index + 4}}">
-			<view class="bio-intro-text">{{items[index]['text1']}}</view>
-			<view class="bio-intro-text">{{items[index]['text2']}}</view>
+		<view class="bio-intro {{index==TabCur?'cur':''}}" wx:for="{{bioData[0]['content'].length}}" wx:key data-id="{{index + 4}}">
+			<view class="bio-intro-text">{{bioData[0]['content'][index]['text']}}</view>
 		</view>
 	</view>
 	<view class='cu-tabbar-height'></view>
