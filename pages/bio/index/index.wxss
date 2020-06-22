@@ -7,7 +7,7 @@
   margin: 12rpx;
 }
 
-.bio-main {
+.bio-wrap {
   justify-content: space-evenly;
   flex-wrap: wrap;
   height: 80%;
