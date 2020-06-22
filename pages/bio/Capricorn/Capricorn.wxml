@@ -1,2 +1,28 @@
 <!--pages/bio/Capricorn/Capricorn.wxml-->
-<text>pages/bio/Capricorn/Capricorn.wxml</text>
+<scroll-view scroll-y class="bg-white scrollPage">
+	<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+    <view slot="backText">返回</view>
+		<view slot="content">
+    <text class="title-text"></text>
+    </view>
+	</cu-custom>
+	<view class="flex bio-main">
+		<view class='header bg-gradual-blue-reverse' style='width:100%;height:286rpx'>
+			<view class="flex bio-icon">
+				<image src="/images/Aries.png" style="width:85rpx; height: 85rpx"></image>
+			</view>
+			<text class="flex bio-text">摩羯座 <text class="divider"></text> 12.22 - 1.19</text>
+		</view>
+		<view class="nav">
+			<view class="flex text-center bio-tabs">
+				<view class="flex-sub bio-tab {{index==TabCur?'cur':''}}" wx:for="{{bioData[0]['content'].length}}" wx:key bindtap="tabSelect" data-id="{{index}}">
+					{{bioData[0]['content'][index]['category']}}
+				</view>
+			</view>
+		</view>
+		<view class="bio-intro {{index==TabCur?'cur':''}}" wx:for="{{bioData[0]['content'].length}}" wx:key data-id="{{index + 4}}">
+			<view class="bio-intro-text">{{bioData[0]['content'][index]['text']}}</view>
+		</view>
+	</view>
+	<view class='cu-tabbar-height'></view>
+</scroll-view>

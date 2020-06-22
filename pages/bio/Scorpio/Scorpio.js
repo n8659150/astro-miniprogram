@@ -1,3 +1,4 @@
+const { fetchBioDataFromServer, renderBioData } = require('../../../models/bio');
 // pages/bio/Scorpio/Scorpio.js
 Page({
 
@@ -5,9 +6,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    bioData: [],
+    TabCur: 0,
   },
-
+  tabSelect(e) {
+    this.setData({
+      TabCur: e.currentTarget.dataset.id,
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -19,7 +25,12 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    fetchBioDataFromServer('Scorpio')
+    .then((data)=> {
+      this.setData({
+        bioData: data.map(renderBioData)
+      })
+    })
   },
 
   /**
