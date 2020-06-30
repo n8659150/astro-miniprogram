@@ -140,13 +140,25 @@
   background-color: #fff;
 }
 
-.bio-text {
+.bio-text, .fortune-text {
   font-size: 38rpx;
   font-weight: bold;
 }
 
+.fortune-text {
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .divider {
   display: inline-block;
+  width: 10rpx;
+  height: 1rpx;
+}
+.fortune-text .divider {
+  display: flex; 
   width: 10rpx;
   height: 1rpx;
 }
@@ -183,4 +195,19 @@
   font-size: 30rpx;
   line-height: 65rpx;
   margin-bottom: 33rpx;
+}
+
+.bio-date {
+  display: none;
+}
+
+.bio-date.cur {
+  display: flex;
+  text-align: center;
+}
+.fortune-text {
+  margin-bottom: 12rpx;
+}
+.fortune-date-text {
+  font-size: 35rpx;
 }

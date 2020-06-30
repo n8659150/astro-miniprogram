@@ -1,1 +1,30 @@
 /* pages/fortune/index/index.wxss */
+.bio-container {
+  width: 30%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 12rpx;
+}
+
+.bio-wrap {
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: 80%;
+  margin: 18rpx auto;
+}
+.bio-icon {
+  border: 4px solid #d3d1e249;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 15rpx; */
+  border-radius: 50%;
+  width: 150rpx;
+  height: 150rpx;
+}
+.bio-text {
+  font-size: 42rpx;
+  font-weight: bold;
+  color: #464259d5;
+}
