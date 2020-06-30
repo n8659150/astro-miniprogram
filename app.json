@@ -16,7 +16,19 @@
     "pages/bio/Sagittarius/Sagittarius",
     "pages/bio/Capricorn/Capricorn",
     "pages/bio/Aquarius/Aquarius",
-    "pages/bio/Pisces/Pisces"
+    "pages/bio/Pisces/Pisces",
+    "pages/fortune/Aries/Aries",
+    "pages/fortune/Taurus/Taurus",
+    "pages/fortune/Gemini/Gemini",
+    "pages/fortune/Cancer/Cancer",
+    "pages/fortune/Leo/Leo",
+    "pages/fortune/Virgo/Virgo",
+    "pages/fortune/Libra/Libra",
+    "pages/fortune/Scorpio/Scorpio",
+    "pages/fortune/Sagittarius/Sagittarius",
+    "pages/fortune/Capricorn/Capricorn",
+    "pages/fortune/Aquarius/Aquarius",
+    "pages/fortune/Pisces/Pisces"
   ],
   "window": {
     "navigationBarBackgroundColor": "#39b54a",
